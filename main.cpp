@@ -234,6 +234,6 @@ int main(int argc, char **argv) {
     }
     cout << end - begin << endl;
     MPI_Finalize();
-    free(V);
+    delete[] V;
     free(need);
 }
